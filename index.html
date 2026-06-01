@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Анимированная презентация коммерческого предложения по мобильному приложению пиццерии для RuStore."
+    >
+    <title>КП | Мобильное приложение для пиццерии</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="data:,">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1777891257674-36c5532e6654?auto=format&fit=crop&fm=jpg&q=72&w=1600">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#presentation">Перейти к презентации</a>
+
+    <div class="stage" data-direction="next">
+      <div class="tech-backdrop" aria-hidden="true">
+        <div class="grid-plane"></div>
+        <div class="scan-beam"></div>
+        <div class="data-stream stream-a"></div>
+        <div class="data-stream stream-b"></div>
+      </div>
+
+      <header class="deck-header" aria-label="Паспорт презентации">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">
+            <i data-lucide="panel-top"></i>
+          </span>
+          <div>
+            <p class="brand-kicker">Коммерческое предложение</p>
+            <p class="brand-title">Пиццерия Приложение</p>
+          </div>
+        </div>
+
+        <div class="header-meta" aria-label="Ключевые параметры проекта">
+          <span>Ногинск</span>
+          <span>RuStore</span>
+          <span>Запуск к открытию</span>
+        </div>
+      </header>
+
+      <main id="presentation" class="slides" tabindex="-1">
+        <section class="slide active" id="panel-1" aria-labelledby="slide-1-title">
+          <div class="slide-grid hero-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Канал продаж к открытию</p>
+              <h1 id="slide-1-title" class="hero-title reveal">Мобильное приложение для пиццерии в Ногинске</h1>
+              <p class="lead reveal">
+                Рабочая система для RuStore: клиентское приложение, меню, корзина, заказы,
+                акции, клиентская база, админ-панель и доставка через веб-кабинет курьера.
+              </p>
+
+              <div class="metric-row reveal" aria-label="Главные параметры предложения">
+                <div class="metric">
+                  <span class="metric-value">461 000 ₽</span>
+                  <span class="metric-label">рекомендуемый запуск</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">8-9 недель</span>
+                  <span class="metric-label">ориентир разработки</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">2-3 мес.</span>
+                  <span class="metric-label">до открытия бизнеса</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-label="Визуальный образ будущего приложения">
+              <img
+                class="hero-photo"
+                src="https://images.unsplash.com/photo-1777891257674-36c5532e6654?auto=format&fit=crop&fm=jpg&q=72&w=1600"
+                alt="Пицца на темном фоне"
+                fetchpriority="high"
+              >
+              <div class="phone-frame" aria-label="Макет главного экрана приложения">
+                <div class="phone-status"></div>
+                <div class="app-hero">
+                  <span class="app-chip">Первый заказ -10%</span>
+                  <strong>Горячая пицца рядом</strong>
+                </div>
+                <div class="app-tabs">
+                  <span class="active-tab">Пицца</span>
+                  <span>Комбо</span>
+                  <span>Акции</span>
+                </div>
+                <div class="app-item">
+                  <span>Пепперони</span>
+                  <strong>690 ₽</strong>
+                </div>
+                <div class="app-item muted">
+                  <span>Маргарита</span>
+                  <strong>540 ₽</strong>
+                </div>
+                <button class="app-order" type="button">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-2" aria-labelledby="slide-2-title">
+          <div class="slide-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Суть проекта</p>
+              <h2 id="slide-2-title" class="slide-title reveal">Не витрина. Отдельный канал заказов.</h2>
+              <p class="lead reveal">
+                Приложение должно начать работать еще до открытия: собирать базу,
+                разогревать спрос промокодами и принимать первые заказы без лишней операционной сложности.
+              </p>
+            </div>
+
+            <div class="feature-matrix reveal">
+              <article class="feature-card">
+                <i data-lucide="users"></i>
+                <h3>Сбор базы</h3>
+                <p>Телефоны клиентов, адреса, история заказов и сегменты для повторных продаж.</p>
+              </article>
+              <article class="feature-card">
+                <i data-lucide="badge-percent"></i>
+                <h3>Акции</h3>
+                <p>Промокод на первый заказ, запуск офферов к открытию и push-кампании.</p>
+              </article>
+              <article class="feature-card">
+                <i data-lucide="shopping-basket"></i>
+                <h3>Заказы</h3>
+                <p>Меню, карточки блюд, корзина, доставка, самовывоз и статус заказа.</p>
+              </article>
+              <article class="feature-card">
+                <i data-lucide="layout-dashboard"></i>
+                <h3>Управление</h3>
+                <p>Админ-панель для меню, цен, заказов, клиентов, акций и статистики.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-3" aria-labelledby="slide-3-title">
+          <div class="slide-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Стратегия запуска</p>
+              <h2 id="slide-3-title" class="slide-title reveal">Сначала рабочее ядро. Потом сложные интеграции.</h2>
+              <p class="lead reveal">
+                Для одной пиццерии на старте важнее успеть к открытию с заказами,
+                доставкой и базой клиентов. Онлайн-оплату, чеки, iiko/r_keeper и отдельное приложение курьера
+                можно подключить следующим этапом.
+              </p>
+            </div>
+
+            <div class="launch-roadmap reveal" aria-label="Логика последовательного запуска">
+              <article>
+                <span class="step-index">01</span>
+                <h3>Первый релиз</h3>
+                <p>Клиентское приложение, меню, корзина, заказы, акции, база клиентов.</p>
+              </article>
+              <article class="recommended-step">
+                <span class="step-index">02</span>
+                <h3>Оптимальный старт</h3>
+                <p>Плюс веб-кабинет курьера, роли, назначение заказов и статусы доставки.</p>
+              </article>
+              <article>
+                <span class="step-index">03</span>
+                <h3>Развитие</h3>
+                <p>Оплата, фискализация, бонусы, геолокация, CRM и ресторанные интеграции.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide deck-column" id="panel-4" aria-labelledby="slide-4-title">
+          <div class="copy-stack compact-copy">
+            <p class="eyebrow reveal">Пакеты разработки</p>
+            <h2 id="slide-4-title" class="slide-title reveal">Четыре сценария под разную готовность бизнеса</h2>
+          </div>
+
+          <div class="pricing-grid reveal" aria-label="Сравнение пакетов разработки">
+            <article class="price-card">
+              <div class="price-topline">Пакет 1</div>
+              <h3>Старт без онлайн-оплаты</h3>
+              <strong>375 000 ₽</strong>
+              <p>Приложение, меню, корзина, заказы, акции, база клиентов, админ-панель.</p>
+            </article>
+
+            <article class="price-card price-card-featured">
+              <div class="price-topline">Рекомендуемый</div>
+              <h3>Оптимальный запуск с курьерами</h3>
+              <strong>461 000 ₽</strong>
+              <p>Все из пакета 1 плюс веб-кабинет курьера, роли, назначение заказов и статусы доставки.</p>
+            </article>
+
+            <article class="price-card">
+              <div class="price-topline">Пакет 3</div>
+              <h3>Онлайн-оплата и фискализация</h3>
+              <strong>576 000 ₽</strong>
+              <p>Оплата в приложении, платежный сервис, возвраты, статусы платежей и чеки.</p>
+            </article>
+
+            <article class="price-card">
+              <div class="price-topline">Пакет 4</div>
+              <h3>Расширенный</h3>
+              <strong>от 756 000 ₽</strong>
+              <p>Интеграции, отдельное приложение курьера, геолокация, бонусы и аналитика.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-5" aria-labelledby="slide-5-title">
+          <div class="slide-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Рекомендуемый вариант</p>
+              <h2 id="slide-5-title" class="slide-title reveal">461 000 ₽ закрывают главную операционную задачу</h2>
+              <p class="lead reveal">
+                Владелец получает не только приложение для клиентов, но и понятную схему доставки:
+                администратор принимает заказ, назначает курьера, курьер обновляет статус.
+              </p>
+            </div>
+
+            <div class="system-stack reveal" aria-label="Состав рекомендуемого пакета">
+              <article>
+                <i data-lucide="smartphone"></i>
+                <h3>Клиентское приложение</h3>
+                <p>RuStore, меню, карточки, корзина, оформление, история, акции и push.</p>
+              </article>
+              <article>
+                <i data-lucide="monitor-cog"></i>
+                <h3>Админ-панель</h3>
+                <p>Заказы, меню, цены, стоп-лист, промокоды, клиенты и базовая статистика.</p>
+              </article>
+              <article>
+                <i data-lucide="route"></i>
+                <h3>Кабинет курьера</h3>
+                <p>Вход по ссылке, список заказов, адрес, телефон, сумма и статусы доставки.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide deck-column" id="panel-6" aria-labelledby="slide-6-title">
+          <div class="copy-stack compact-copy">
+            <p class="eyebrow reveal">Сценарий заказа</p>
+            <h2 id="slide-6-title" class="slide-title reveal">Путь заказа становится прозрачным для всех ролей</h2>
+          </div>
+
+          <div class="flow-line reveal" aria-label="Процесс обработки заказа">
+            <article>
+              <i data-lucide="pizza"></i>
+              <h3>Клиент</h3>
+              <p>Выбирает позиции, применяет промокод и оформляет доставку или самовывоз.</p>
+            </article>
+            <article>
+              <i data-lucide="bell-ring"></i>
+              <h3>Администратор</h3>
+              <p>Видит новый заказ, подтверждает его и назначает курьера.</p>
+            </article>
+            <article>
+              <i data-lucide="bike"></i>
+              <h3>Курьер</h3>
+              <p>Открывает веб-кабинет, получает адрес и меняет статусы доставки.</p>
+            </article>
+            <article>
+              <i data-lucide="repeat-2"></i>
+              <h3>Повторная продажа</h3>
+              <p>Клиент возвращается через историю заказов, акции и push-уведомления.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-7" aria-labelledby="slide-7-title">
+          <div class="slide-grid app-grid">
+            <div class="device-showcase reveal">
+              <img
+                src="https://images.unsplash.com/photo-1694441431338-8c66ec524118?auto=format&fit=crop&fm=jpg&q=72&w=1200"
+                alt="Пицца на столе в ресторане"
+                loading="lazy"
+              >
+              <div class="floating-ticket">
+                <span>Промокод</span>
+                <strong>OPEN10</strong>
+              </div>
+            </div>
+
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Клиентское приложение</p>
+              <h2 id="slide-7-title" class="slide-title reveal">Покупатель видит меню, акции и быстрый повтор заказа</h2>
+              <div class="pill-list reveal" aria-label="Функции клиентского приложения">
+                <span>Главная</span>
+                <span>Категории</span>
+                <span>Карточка товара</span>
+                <span>Корзина</span>
+                <span>Доставка</span>
+                <span>Самовывоз</span>
+                <span>Промокоды</span>
+                <span>История</span>
+                <span>Профиль</span>
+                <span>Контакты</span>
+                <span>Push</span>
+                <span>Статусы заказа</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-8" aria-labelledby="slide-8-title">
+          <div class="slide-grid admin-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Админка и курьеры</p>
+              <h2 id="slide-8-title" class="slide-title reveal">Владелец управляет продажами без ручного хаоса</h2>
+              <p class="lead reveal">
+                Заказы, меню, клиенты, промокоды и курьеры собираются в одну систему.
+                Для курьера достаточно веб-кабинета, поэтому не нужно запускать второе приложение на старте.
+              </p>
+            </div>
+
+            <div class="dashboard-mock reveal" aria-label="Макет админ-панели">
+              <div class="dash-header">
+                <span>Новые заказы</span>
+                <strong>12 сегодня</strong>
+              </div>
+              <div class="dash-row active">
+                <span>Заказ #1042</span>
+                <strong>Передан курьеру</strong>
+              </div>
+              <div class="dash-row">
+                <span>Заказ #1041</span>
+                <strong>Готовится</strong>
+              </div>
+              <div class="dash-row">
+                <span>Заказ #1040</span>
+                <strong>Доставлен</strong>
+              </div>
+              <div class="dash-stats">
+                <span>Выручка</span>
+                <strong>48 900 ₽</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-9" aria-labelledby="slide-9-title">
+          <div class="slide-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Оплата и чеки</p>
+              <h2 id="slide-9-title" class="slide-title reveal">Онлайн-оплата не должна тормозить первый запуск</h2>
+              <p class="lead reveal">
+                Если банк, касса и платежный провайдер еще не выбраны, лучше стартовать
+                с оплатой при получении, а онлайн-оплату и фискализацию подключить отдельным этапом.
+              </p>
+            </div>
+
+            <div class="comparison-panel reveal" aria-label="Сравнение запуска без оплаты и с оплатой">
+              <article>
+                <span class="panel-label">Пакет 2</span>
+                <h3>Запуск сейчас</h3>
+                <ul>
+                  <li>Заказ в приложении</li>
+                  <li>Оплата при получении</li>
+                  <li>Доставка через курьера</li>
+                  <li>База клиентов и акции</li>
+                </ul>
+              </article>
+              <article>
+                <span class="panel-label alt">Пакет 3</span>
+                <h3>Когда нужен полный контур</h3>
+                <ul>
+                  <li>Платежная форма</li>
+                  <li>Webhooks и статусы</li>
+                  <li>Возвраты</li>
+                  <li>Фискальный чек</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide deck-column" id="panel-10" aria-labelledby="slide-10-title">
+          <div class="copy-stack compact-copy">
+            <p class="eyebrow reveal">Оплата проекта</p>
+            <h2 id="slide-10-title" class="slide-title reveal">Три этапа: понятные результаты после каждого платежа</h2>
+          </div>
+
+          <div class="payment-timeline reveal" aria-label="Разбивка оплаты по рекомендуемому пакету">
+            <article>
+              <span>40%</span>
+              <strong>184 000 ₽</strong>
+              <h3>Проектирование</h3>
+              <p>Брифинг, ТЗ, прототип, дизайн, архитектура и сценарии доставки.</p>
+            </article>
+            <article>
+              <span>35%</span>
+              <strong>162 000 ₽</strong>
+              <h3>Разработка</h3>
+              <p>Приложение, backend, админ-панель, кабинет курьера, заказы и акции.</p>
+            </article>
+            <article>
+              <span>25%</span>
+              <strong>115 000 ₽</strong>
+              <h3>Запуск</h3>
+              <p>Тестирование, публикация в RuStore, передача доступов и инструкций.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-11" aria-labelledby="slide-11-title">
+          <div class="slide-grid">
+            <div class="copy-stack">
+              <p class="eyebrow reveal">Подготовка к старту</p>
+              <h2 id="slide-11-title" class="slide-title reveal">Чтобы успеть к открытию, решения нужны заранее</h2>
+              <p class="lead reveal">
+                Проект можно вести параллельно с подготовкой пиццерии, но меню, цены,
+                зона доставки, акции, юридические документы и материалы для RuStore лучше собрать на первом этапе.
+              </p>
+            </div>
+
+            <div class="readiness-board reveal" aria-label="Что подготовить клиенту">
+              <article>
+                <h3>Контент</h3>
+                <p>Название, логотип, меню, цены, фото блюд, составы и стартовые акции.</p>
+              </article>
+              <article>
+                <h3>Операции</h3>
+                <p>Адрес, режим работы, зоны доставки, условия самовывоза и роли команды.</p>
+              </article>
+              <article>
+                <h3>Документы</h3>
+                <p>Реквизиты, политика конфиденциальности, пользовательское соглашение, доступы.</p>
+              </article>
+              <article>
+                <h3>Оплата</h3>
+                <p>Если выбирается пакет 3: банк, эквайринг, касса, чеки и схема возвратов.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" id="panel-12" aria-labelledby="slide-12-title">
+          <div class="final-slide">
+            <p class="eyebrow reveal">Клиентский вывод</p>
+            <h2 id="slide-12-title" class="slide-title reveal">Оптимально начинать со второго варианта за 461 000 ₽</h2>
+            <p class="lead reveal">
+              Он дает рабочую доставку, клиентскую базу, акции, админ-панель и подготовку к RuStore
+              без лишнего усложнения перед открытием. Оплату, чеки и интеграции можно подключить после запуска,
+              когда появится реальный поток заказов.
+            </p>
+
+            <div class="closing-grid reveal">
+              <article>
+                <i data-lucide="rocket"></i>
+                <h3>Запуск к открытию</h3>
+                <p>Фокус на работающем канале продаж, а не на перегруженном первом релизе.</p>
+              </article>
+              <article>
+                <i data-lucide="shield-check"></i>
+                <h3>Прозрачные этапы</h3>
+                <p>После каждого этапа есть понятный результат, который можно проверить.</p>
+              </article>
+              <article>
+                <i data-lucide="trending-up"></i>
+                <h3>Рост после старта</h3>
+                <p>Оплата, фискализация, бонусы и интеграции добавляются по мере необходимости.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="slide-map" aria-label="Навигация по слайдам">
+        <button class="map-item active" type="button" data-slide="0" aria-current="true">
+          <span>01</span><strong>Суть</strong>
+        </button>
+        <button class="map-item" type="button" data-slide="1"><span>02</span><strong>Задачи</strong></button>
+        <button class="map-item" type="button" data-slide="2"><span>03</span><strong>Стратегия</strong></button>
+        <button class="map-item" type="button" data-slide="3"><span>04</span><strong>Пакеты</strong></button>
+        <button class="map-item" type="button" data-slide="4"><span>05</span><strong>461К</strong></button>
+        <button class="map-item" type="button" data-slide="5"><span>06</span><strong>Заказ</strong></button>
+        <button class="map-item" type="button" data-slide="6"><span>07</span><strong>Клиент</strong></button>
+        <button class="map-item" type="button" data-slide="7"><span>08</span><strong>Админка</strong></button>
+        <button class="map-item" type="button" data-slide="8"><span>09</span><strong>Оплата</strong></button>
+        <button class="map-item" type="button" data-slide="9"><span>10</span><strong>Этапы</strong></button>
+        <button class="map-item" type="button" data-slide="10"><span>11</span><strong>Старт</strong></button>
+        <button class="map-item" type="button" data-slide="11"><span>12</span><strong>Вывод</strong></button>
+      </aside>
+
+      <nav class="deck-controls" aria-label="Управление презентацией">
+        <button class="control-button" id="prevSlide" type="button" aria-label="Предыдущий слайд">
+          <i data-lucide="arrow-left"></i>
+        </button>
+        <div class="slide-counter" aria-live="polite">
+          <span id="currentSlide">01</span>
+          <span aria-hidden="true">/</span>
+          <span id="totalSlides">12</span>
+        </div>
+        <button class="control-button" id="nextSlide" type="button" aria-label="Следующий слайд">
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </nav>
+
+      <div class="progress-track" aria-hidden="true">
+        <span id="progressBar"></span>
+      </div>
+    </div>
+  </body>
+</html>
