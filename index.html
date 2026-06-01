@@ -85,24 +85,74 @@
               >
               <div class="phone-frame" aria-label="Макет главного экрана приложения">
                 <div class="phone-status"></div>
-                <div class="app-hero">
-                  <span class="app-chip">Первый заказ -10%</span>
-                  <strong>Горячая пицца рядом</strong>
+                <div class="app-screen">
+                  <div class="app-topbar">
+                    <div>
+                      <span class="app-overline">Доставка сегодня</span>
+                      <strong>Ногинск, 25 мин</strong>
+                    </div>
+                    <button class="app-icon-button" type="button" aria-label="Профиль клиента">
+                      <i data-lucide="user"></i>
+                    </button>
+                  </div>
+
+                  <div class="app-search" aria-label="Поиск по меню">
+                    <i data-lucide="search"></i>
+                    <span>Пицца, комбо, напитки</span>
+                  </div>
+
+                  <div class="app-promo">
+                    <div>
+                      <span class="app-chip">Скоро открытие</span>
+                      <strong>Первый заказ -10%</strong>
+                      <p>Промокод OPEN10 уже в приложении</p>
+                    </div>
+                    <div class="promo-pizza" aria-hidden="true"></div>
+                  </div>
+
+                  <div class="app-tabs" aria-label="Категории меню">
+                    <span class="active-tab">Пицца</span>
+                    <span>Комбо</span>
+                    <span>Закуски</span>
+                    <span>Напитки</span>
+                  </div>
+
+                  <div class="app-menu-list" aria-label="Популярные позиции">
+                    <article class="menu-card">
+                      <div class="menu-thumb pepperoni" aria-hidden="true"></div>
+                      <div>
+                        <h3>Пепперони</h3>
+                        <p>30 см · моцарелла · пепперони</p>
+                        <strong>690 ₽</strong>
+                      </div>
+                      <button type="button" aria-label="Добавить пепперони">+</button>
+                    </article>
+
+                    <article class="menu-card">
+                      <div class="menu-thumb margherita" aria-hidden="true"></div>
+                      <div>
+                        <h3>Маргарита</h3>
+                        <p>Томаты · сыр · базилик</p>
+                        <strong>540 ₽</strong>
+                      </div>
+                      <button type="button" aria-label="Добавить маргариту">+</button>
+                    </article>
+                  </div>
+
+                  <div class="app-cart-bar" aria-label="Корзина заказа">
+                    <div>
+                      <span>В корзине</span>
+                      <strong>2 позиции</strong>
+                    </div>
+                    <button type="button">1 230 ₽</button>
+                  </div>
+
+                  <div class="app-bottom-nav" aria-label="Навигация приложения">
+                    <span class="active"><i data-lucide="house"></i>Меню</span>
+                    <span><i data-lucide="badge-percent"></i>Акции</span>
+                    <span><i data-lucide="receipt"></i>Заказы</span>
+                  </div>
                 </div>
-                <div class="app-tabs">
-                  <span class="active-tab">Пицца</span>
-                  <span>Комбо</span>
-                  <span>Акции</span>
-                </div>
-                <div class="app-item">
-                  <span>Пепперони</span>
-                  <strong>690 ₽</strong>
-                </div>
-                <div class="app-item muted">
-                  <span>Маргарита</span>
-                  <strong>540 ₽</strong>
-                </div>
-                <button class="app-order" type="button">В корзину</button>
               </div>
             </div>
           </div>

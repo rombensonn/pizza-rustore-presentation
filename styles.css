@@ -436,11 +436,11 @@ a:focus-visible {
 .phone-frame {
   position: relative;
   z-index: 2;
-  width: 286px;
-  min-height: 560px;
+  width: 310px;
+  height: 604px;
   border: 1px solid rgba(210, 235, 255, 0.24);
   border-radius: 8px;
-  padding: 18px;
+  padding: 12px;
   background:
     linear-gradient(180deg, rgba(13, 48, 83, 0.96), rgba(4, 15, 31, 0.98)),
     #071527;
@@ -454,22 +454,124 @@ a:focus-visible {
 .phone-status {
   width: 74px;
   height: 6px;
-  margin: 0 auto 22px;
+  margin: 0 auto 12px;
   border-radius: 999px;
   background: rgba(238, 247, 255, 0.26);
 }
 
-.app-hero {
-  min-height: 150px;
+.app-screen {
+  height: calc(100% - 18px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   gap: 10px;
+  overflow: hidden;
+}
+
+.app-topbar {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.app-topbar strong {
+  display: block;
+  margin-top: 2px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.app-overline,
+.app-search span,
+.app-cart-bar span {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.app-icon-button {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(147, 218, 255, 0.22);
   border-radius: var(--radius);
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+
+.app-icon-button svg,
+.app-search svg,
+.app-bottom-nav svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+.app-search {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(147, 218, 255, 0.16);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+}
+
+.app-promo {
+  position: relative;
+  min-height: 116px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(99, 230, 255, 0.22);
+  border-radius: var(--radius);
+  padding: 12px;
   background:
-    linear-gradient(180deg, transparent 0%, rgba(2, 7, 20, 0.82) 100%),
-    url("https://images.unsplash.com/photo-1777891257674-36c5532e6654?auto=format&fit=crop&fm=jpg&q=70&w=760") center / cover;
+    radial-gradient(circle at 88% 22%, rgba(255, 217, 132, 0.28), transparent 28%),
+    linear-gradient(135deg, rgba(99, 230, 255, 0.16), rgba(107, 145, 255, 0.08)),
+    rgba(255, 255, 255, 0.055);
+}
+
+.app-promo strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.18;
+}
+
+.app-promo p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.promo-pizza,
+.menu-thumb {
+  position: relative;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, #ffd88b 0 7%, transparent 8%),
+    radial-gradient(circle at 34% 36%, #c93636 0 8%, transparent 9%),
+    radial-gradient(circle at 63% 32%, #c93636 0 7%, transparent 8%),
+    radial-gradient(circle at 52% 62%, #c93636 0 7%, transparent 8%),
+    radial-gradient(circle at 66% 67%, #f6f0bc 0 6%, transparent 7%),
+    radial-gradient(circle, #f6b74e 0 55%, #c86c2d 56% 67%, #8f3f20 68%);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.26);
+}
+
+.promo-pizza {
+  width: 86px;
+  height: 86px;
+  transform: rotate(-12deg);
 }
 
 .app-chip {
@@ -477,21 +579,16 @@ a:focus-visible {
   border-radius: var(--radius);
   background: rgba(99, 230, 255, 0.22);
   color: var(--cyan);
-  padding: 5px 8px;
-  font-size: 0.74rem;
+  padding: 4px 7px;
+  font-size: 0.65rem;
   font-weight: 700;
-}
-
-.app-hero strong {
-  color: var(--text);
-  font-size: 1.2rem;
-  line-height: 1.2;
 }
 
 .app-tabs {
   display: flex;
-  gap: 8px;
-  margin: 18px 0;
+  gap: 6px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .app-tabs span,
@@ -503,13 +600,136 @@ a:focus-visible {
 }
 
 .app-tabs span {
-  padding: 7px 9px;
-  font-size: 0.78rem;
+  flex: 0 0 auto;
+  padding: 6px 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
 }
 
 .app-tabs .active-tab {
   color: var(--bg-0);
   background: linear-gradient(135deg, var(--cyan), var(--green));
+}
+
+.app-menu-list {
+  display: grid;
+  gap: 8px;
+  min-height: 0;
+}
+
+.menu-card {
+  min-height: 82px;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) 32px;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(124, 197, 255, 0.13);
+  border-radius: var(--radius);
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.058);
+}
+
+.menu-thumb {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-thumb.margherita {
+  background:
+    radial-gradient(circle at 38% 36%, #fff4bb 0 7%, transparent 8%),
+    radial-gradient(circle at 62% 52%, #fff4bb 0 8%, transparent 9%),
+    radial-gradient(circle at 53% 28%, #69d17b 0 5%, transparent 6%),
+    radial-gradient(circle at 40% 63%, #69d17b 0 5%, transparent 6%),
+    radial-gradient(circle, #f6b74e 0 55%, #c86c2d 56% 67%, #8f3f20 68%);
+}
+
+.menu-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.84rem;
+  line-height: 1.2;
+}
+
+.menu-card p {
+  margin: 3px 0 0;
+  color: var(--muted-2);
+  font-size: 0.64rem;
+  line-height: 1.3;
+}
+
+.menu-card strong {
+  display: block;
+  margin-top: 5px;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.menu-card button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--cyan), var(--green));
+  color: #03101f;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.app-cart-bar {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid rgba(121, 239, 194, 0.32);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  background: linear-gradient(135deg, rgba(99, 230, 255, 0.14), rgba(121, 239, 194, 0.1));
+}
+
+.app-cart-bar strong {
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.app-cart-bar button {
+  min-height: 36px;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  background: linear-gradient(135deg, var(--cyan), var(--green), var(--gold));
+  color: #03101f;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.app-bottom-nav {
+  min-height: 44px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  border: 1px solid rgba(147, 218, 255, 0.14);
+  border-radius: var(--radius);
+  padding: 4px;
+  background: rgba(1, 8, 18, 0.46);
+}
+
+.app-bottom-nav span {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 6px;
+  color: var(--muted-2);
+  font-size: 0.58rem;
+  font-weight: 800;
+}
+
+.app-bottom-nav span.active {
+  background: rgba(99, 230, 255, 0.12);
+  color: var(--cyan);
 }
 
 .app-item,
