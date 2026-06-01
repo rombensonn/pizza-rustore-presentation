@@ -2698,3 +2698,570 @@ body {
     transform: none;
   }
 }
+
+/* Browser comment refinements */
+.hero-title {
+  max-width: 640px;
+  font-size: clamp(3.25rem, 4.35vw, 4.85rem);
+  line-height: 1.02;
+}
+
+.slide-title {
+  font-size: clamp(2.7rem, 4.25vw, 4.65rem);
+  line-height: 1.03;
+}
+
+#panel-1 .metric-row {
+  max-width: 430px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#panel-2 .feature-matrix {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+#panel-2 .feature-card {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 26px;
+  padding-top: 156px;
+}
+
+#panel-2 .feature-card:nth-child(1),
+#panel-2 .feature-card:nth-child(4) {
+  min-height: 310px;
+}
+
+#panel-2 .feature-card::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 146px;
+  height: 112px;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.025)),
+    rgba(93, 110, 255, 0.22);
+  box-shadow:
+    0 24px 68px rgba(89, 104, 255, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  transform: rotateX(58deg) rotateZ(-18deg);
+  transform-origin: center;
+  animation: editorialObjectFloat 5.8s ease-in-out infinite;
+}
+
+#panel-2 .feature-card::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 28px;
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 36% 34%, #c93636 0 8%, transparent 9%),
+    radial-gradient(circle at 66% 38%, #c93636 0 7%, transparent 8%),
+    radial-gradient(circle at 52% 66%, #f5edd1 0 7%, transparent 8%),
+    radial-gradient(circle, #f2b75f 0 54%, #bf6932 55% 66%, #7b351d 67%);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3);
+  transform: rotate(-12deg);
+}
+
+#panel-2 .feature-card:nth-child(1)::after {
+  width: 104px;
+  height: 78px;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 28% 46%, rgba(157, 180, 255, 0.9) 0 8%, transparent 9%),
+    radial-gradient(circle at 52% 36%, rgba(157, 180, 255, 0.75) 0 7%, transparent 8%),
+    radial-gradient(circle at 72% 58%, rgba(157, 180, 255, 0.68) 0 8%, transparent 9%),
+    linear-gradient(135deg, rgba(247, 244, 238, 0.18), rgba(247, 244, 238, 0.035));
+}
+
+#panel-2 .feature-card:nth-child(2)::after {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(247, 244, 238, 0.95) 0 10%, transparent 11%),
+    conic-gradient(from 18deg, #9db4ff, #f3ead2, #5968ff, #9db4ff);
+}
+
+#panel-2 .feature-card:nth-child(4)::after {
+  width: 112px;
+  height: 82px;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(247, 244, 238, 0.28) 1px, transparent 1px),
+    linear-gradient(rgba(247, 244, 238, 0.22) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(157, 180, 255, 0.58), rgba(89, 104, 255, 0.32));
+  background-size: 28px 100%, 100% 22px, auto;
+}
+
+#panel-2 .feature-card svg,
+#panel-2 .feature-card h3,
+#panel-2 .feature-card p {
+  position: relative;
+  z-index: 1;
+}
+
+#panel-2 .feature-card svg {
+  margin: 0;
+}
+
+.pricing-grid {
+  align-items: stretch;
+}
+
+.price-card,
+.price-card-featured {
+  min-height: 350px;
+  transform: none;
+}
+
+.price-card {
+  gap: 20px;
+  padding: 24px;
+}
+
+.price-card h3 {
+  max-width: 13.5ch;
+  font-size: clamp(0.96rem, 1.05vw, 1.08rem);
+  line-height: 1.28;
+}
+
+.price-card strong {
+  white-space: nowrap;
+  font-size: clamp(2rem, 2.35vw, 2.65rem);
+  line-height: 1.04;
+}
+
+.price-card p {
+  margin-top: auto;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.price-topline {
+  width: fit-content;
+}
+
+#panel-4 .compact-copy {
+  margin-bottom: 20px;
+}
+
+#panel-4 .slide-title {
+  max-width: 1040px;
+  font-size: clamp(2.9rem, 4.1vw, 4.5rem);
+}
+
+.system-stack {
+  gap: 14px;
+  perspective: 1000px;
+}
+
+.system-stack article {
+  position: relative;
+  min-height: 178px;
+  overflow: hidden;
+  grid-template-columns: 66px minmax(0, 1fr);
+  padding: 28px 28px 28px 26px;
+  background:
+    radial-gradient(circle at 86% 18%, rgba(157, 180, 255, 0.26), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.026)),
+    rgba(28, 28, 28, 0.86);
+}
+
+.system-stack article::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 156px;
+  height: 104px;
+  border: 1px solid rgba(247, 244, 238, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(157, 180, 255, 0.45) 0 28%, transparent 28%),
+    linear-gradient(180deg, rgba(247, 244, 238, 0.18), rgba(247, 244, 238, 0.04));
+  box-shadow: 0 28px 72px rgba(89, 104, 255, 0.22);
+  transform: rotateX(58deg) rotateZ(-15deg);
+  animation: systemFloat 6.2s ease-in-out infinite;
+}
+
+.system-stack article::after {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: 74px;
+  width: 68px;
+  height: 68px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 36% 34%, #d33b3b 0 8%, transparent 9%),
+    radial-gradient(circle at 62% 52%, #f4e7a6 0 7%, transparent 8%),
+    radial-gradient(circle, #efad4f 0 55%, #b7602f 56% 68%, #6f2f18 69%);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  animation: pizzaSpin 12s linear infinite;
+}
+
+.system-stack article:nth-child(2)::before {
+  width: 164px;
+  height: 110px;
+  background:
+    linear-gradient(90deg, rgba(247, 244, 238, 0.18) 1px, transparent 1px),
+    linear-gradient(rgba(247, 244, 238, 0.16) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(157, 180, 255, 0.46), rgba(89, 104, 255, 0.2));
+  background-size: 42px 100%, 100% 28px, auto;
+}
+
+.system-stack article:nth-child(2)::after {
+  width: 84px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--editorial-sky), var(--editorial-cream));
+  transform: rotate(-18deg);
+  animation: dashboardScan 2.6s ease-in-out infinite;
+}
+
+.system-stack article:nth-child(3)::before {
+  background:
+    radial-gradient(circle at 18% 68%, rgba(247, 244, 238, 0.7) 0 5%, transparent 6%),
+    radial-gradient(circle at 54% 32%, rgba(247, 244, 238, 0.7) 0 5%, transparent 6%),
+    radial-gradient(circle at 78% 58%, rgba(247, 244, 238, 0.7) 0 5%, transparent 6%),
+    linear-gradient(135deg, rgba(157, 180, 255, 0.44), rgba(89, 104, 255, 0.18));
+}
+
+.system-stack article:nth-child(3)::after {
+  width: 110px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 244, 238, 0.18);
+  background:
+    radial-gradient(circle at 20% 50%, var(--editorial-cream) 0 6%, transparent 7%),
+    radial-gradient(circle at 52% 50%, var(--editorial-sky) 0 6%, transparent 7%),
+    radial-gradient(circle at 82% 50%, var(--editorial-violet) 0 6%, transparent 7%),
+    rgba(255, 255, 255, 0.05);
+  animation: routePulse 2.8s ease-in-out infinite;
+}
+
+.system-stack article svg,
+.system-stack article h3,
+.system-stack article p {
+  position: relative;
+  z-index: 1;
+}
+
+.flow-line article {
+  position: relative;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 118px;
+}
+
+.flow-line article svg {
+  position: absolute;
+  top: 26px;
+  left: 24px;
+  margin: 0;
+}
+
+.flow-line h3 {
+  margin-top: auto;
+}
+
+.device-showcase.app-showcase {
+  min-height: 590px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 26% 28%, rgba(157, 180, 255, 0.28), transparent 28%),
+    radial-gradient(circle at 82% 78%, rgba(241, 184, 90, 0.16), transparent 30%),
+    rgba(14, 14, 16, 0.9);
+}
+
+.device-showcase.app-showcase::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 44%, rgba(157, 180, 255, 0.18) 45% 46%, transparent 47%),
+    radial-gradient(circle at 50% 50%, transparent 0 63%, rgba(241, 184, 90, 0.16) 64% 65%, transparent 66%);
+  animation: orbitTurn 16s linear infinite;
+}
+
+.showcase-phone {
+  position: relative;
+  z-index: 2;
+  width: 306px;
+  height: 560px;
+  border: 1px solid rgba(247, 244, 238, 0.22);
+  border-radius: 8px;
+  padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(20, 25, 52, 0.98), rgba(6, 7, 14, 0.99)),
+    #080910;
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.54),
+    0 0 66px rgba(89, 104, 255, 0.24);
+  transform: rotate(-1deg);
+}
+
+.app-showcase .app-screen {
+  height: calc(100% - 18px);
+}
+
+.app-side-card {
+  position: absolute;
+  z-index: 3;
+  min-width: 148px;
+  border: 1px solid rgba(247, 244, 238, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(15, 15, 17, 0.78);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(16px);
+}
+
+.app-side-card span {
+  display: block;
+  color: var(--editorial-soft);
+  font-size: 0.78rem;
+}
+
+.app-side-card strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--editorial-cream);
+  font-family: var(--editorial-font);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.card-promo {
+  left: 28px;
+  bottom: 34px;
+}
+
+.card-status {
+  top: 42px;
+  right: 30px;
+}
+
+.card-status strong {
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 800;
+}
+
+.payment-timeline article:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(120deg, rgba(89, 104, 255, 0.96), rgba(157, 180, 255, 0.78), rgba(89, 104, 255, 0.52), rgba(241, 184, 90, 0.24)),
+    #242424;
+  background-size: 240% 240%;
+  animation: paymentGradientFlow 7s ease-in-out infinite;
+}
+
+.payment-timeline article:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  inset: -40% -25%;
+  background: linear-gradient(105deg, transparent 32%, rgba(255, 255, 255, 0.24) 48%, transparent 64%);
+  transform: translateX(-46%) rotate(8deg);
+  animation: paymentShimmer 4.8s ease-in-out infinite;
+}
+
+.payment-timeline article:nth-child(2) > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes editorialObjectFloat {
+  0%,
+  100% {
+    transform: rotateX(58deg) rotateZ(-18deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotateX(58deg) rotateZ(-12deg) translate3d(-6px, 8px, 0);
+  }
+}
+
+@keyframes systemFloat {
+  0%,
+  100% {
+    transform: rotateX(58deg) rotateZ(-15deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotateX(58deg) rotateZ(-9deg) translate3d(-8px, 7px, 0);
+  }
+}
+
+@keyframes pizzaSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dashboardScan {
+  0%,
+  100% {
+    transform: translate3d(-32px, 16px, 0) rotate(-18deg);
+  }
+
+  50% {
+    transform: translate3d(22px, 30px, 0) rotate(-18deg);
+  }
+}
+
+@keyframes routePulse {
+  0%,
+  100% {
+    opacity: 0.64;
+    transform: scale(0.96);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes orbitTurn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes paymentGradientFlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes paymentShimmer {
+  0%,
+  55% {
+    transform: translateX(-58%) rotate(8deg);
+  }
+
+  100% {
+    transform: translateX(58%) rotate(8deg);
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1041px) {
+  .hero-title {
+    max-width: 620px;
+    font-size: clamp(3.15rem, 4.05vw, 4.45rem);
+  }
+
+  .slide-title {
+    font-size: clamp(2.55rem, 3.85vw, 4.1rem);
+  }
+
+  #panel-2 .feature-card {
+    min-height: 280px;
+    padding-top: 132px;
+  }
+
+  #panel-2 .feature-card:nth-child(1),
+  #panel-2 .feature-card:nth-child(4) {
+    min-height: 280px;
+  }
+
+  .price-card,
+  .price-card-featured {
+    min-height: 320px;
+  }
+
+  .price-card strong {
+    font-size: clamp(1.9rem, 2.15vw, 2.42rem);
+  }
+
+  .system-stack article {
+    min-height: 158px;
+  }
+
+  .flow-line article,
+  .flow-line article:nth-child(2),
+  .flow-line article:nth-child(3),
+  .flow-line article:nth-child(4) {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1040px) {
+  #panel-1 .metric-row {
+    max-width: 100%;
+  }
+
+  #panel-2 .feature-matrix,
+  #panel-2 .feature-card,
+  #panel-2 .feature-card:nth-child(1),
+  #panel-2 .feature-card:nth-child(4) {
+    min-height: auto;
+  }
+
+  #panel-2 .feature-card {
+    padding-top: 148px;
+  }
+
+  .showcase-phone {
+    width: min(306px, 84vw);
+  }
+
+  .app-side-card {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-title {
+    max-width: 11ch;
+    font-size: clamp(2.7rem, 10.8vw, 3.5rem);
+  }
+
+  .slide-title,
+  .deck-column .slide-title {
+    max-width: 12ch;
+    font-size: clamp(2.25rem, 9.2vw, 3rem);
+  }
+
+  #panel-1 .metric-row {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card strong {
+    font-size: clamp(2rem, 11vw, 2.7rem);
+  }
+
+  .device-showcase.app-showcase {
+    min-height: 620px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #panel-2 .feature-card::before,
+  .system-stack article::before,
+  .system-stack article::after,
+  .device-showcase.app-showcase::before,
+  .payment-timeline article:nth-child(2),
+  .payment-timeline article:nth-child(2)::after {
+    animation: none;
+  }
+}

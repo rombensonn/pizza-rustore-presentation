@@ -62,10 +62,6 @@
 
               <div class="metric-row reveal" aria-label="Главные параметры предложения">
                 <div class="metric">
-                  <span class="metric-value">461 000 ₽</span>
-                  <span class="metric-label">рекомендуемый запуск</span>
-                </div>
-                <div class="metric">
                   <span class="metric-value">8-9 недель</span>
                   <span class="metric-label">ориентир разработки</span>
                 </div>
@@ -326,15 +322,79 @@
 
         <section class="slide" id="panel-7" aria-labelledby="slide-7-title">
           <div class="slide-grid app-grid">
-            <div class="device-showcase reveal">
-              <img
-                src="https://images.unsplash.com/photo-1694441431338-8c66ec524118?auto=format&fit=crop&fm=jpg&q=72&w=1200"
-                alt="Пицца на столе в ресторане"
-                loading="lazy"
-              >
-              <div class="floating-ticket">
+            <div class="device-showcase app-showcase reveal" aria-label="Макет клиентского приложения">
+              <div class="showcase-phone">
+                <div class="phone-status"></div>
+                <div class="app-screen">
+                  <div class="app-topbar">
+                    <div>
+                      <span class="app-overline">Сегодня до 23:00</span>
+                      <strong>Пицца рядом</strong>
+                    </div>
+                    <button class="app-icon-button" type="button" aria-label="Профиль клиента">
+                      <i data-lucide="user"></i>
+                    </button>
+                  </div>
+
+                  <div class="app-search" aria-label="Поиск по меню">
+                    <i data-lucide="search"></i>
+                    <span>Найти пиццу или комбо</span>
+                  </div>
+
+                  <div class="app-promo">
+                    <div>
+                      <span class="app-chip">OPEN10</span>
+                      <strong>Первый заказ -10%</strong>
+                      <p>Акция к открытию уже в меню</p>
+                    </div>
+                    <div class="promo-pizza" aria-hidden="true"></div>
+                  </div>
+
+                  <div class="app-tabs" aria-label="Категории меню">
+                    <span class="active-tab">Пицца</span>
+                    <span>Комбо</span>
+                    <span>Акции</span>
+                    <span>Напитки</span>
+                  </div>
+
+                  <div class="app-menu-list" aria-label="Пример меню">
+                    <article class="menu-card">
+                      <div class="menu-thumb pepperoni" aria-hidden="true"></div>
+                      <div>
+                        <h3>Пепперони</h3>
+                        <p>Острая классика · 30 см</p>
+                        <strong>690 ₽</strong>
+                      </div>
+                      <button type="button" aria-label="Добавить пепперони">+</button>
+                    </article>
+                    <article class="menu-card">
+                      <div class="menu-thumb margherita" aria-hidden="true"></div>
+                      <div>
+                        <h3>Маргарита</h3>
+                        <p>Томаты · моцарелла · базилик</p>
+                        <strong>540 ₽</strong>
+                      </div>
+                      <button type="button" aria-label="Добавить маргариту">+</button>
+                    </article>
+                  </div>
+
+                  <div class="app-cart-bar" aria-label="Корзина">
+                    <div>
+                      <span>Корзина</span>
+                      <strong>2 позиции</strong>
+                    </div>
+                    <button type="button">Оформить</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="app-side-card card-promo">
                 <span>Промокод</span>
                 <strong>OPEN10</strong>
+              </div>
+              <div class="app-side-card card-status">
+                <span>Статус</span>
+                <strong>Готовится</strong>
               </div>
             </div>
 
@@ -529,7 +589,7 @@
         <button class="map-item" type="button" data-slide="1"><span>02</span><strong>Задачи</strong></button>
         <button class="map-item" type="button" data-slide="2"><span>03</span><strong>Стратегия</strong></button>
         <button class="map-item" type="button" data-slide="3"><span>04</span><strong>Пакеты</strong></button>
-        <button class="map-item" type="button" data-slide="4"><span>05</span><strong>461К</strong></button>
+        <button class="map-item" type="button" data-slide="4"><span>05</span><strong>Состав</strong></button>
         <button class="map-item" type="button" data-slide="5"><span>06</span><strong>Заказ</strong></button>
         <button class="map-item" type="button" data-slide="6"><span>07</span><strong>Клиент</strong></button>
         <button class="map-item" type="button" data-slide="7"><span>08</span><strong>Админка</strong></button>
